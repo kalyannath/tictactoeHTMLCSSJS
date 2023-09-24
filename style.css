@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    transition: all 0.1s ease-in-out;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-board {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(211 199 60 / 60%);
+    border-radius: 50px;
+    box-shadow: 10px 8px 27px 2px rgba(0,0,0,0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grids {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+.row {
+    display: flex;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+    flex: 1;
+}
+
+.row3 {
+    border: none;
+}
+
+.cell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: rgba(255, 255, 255);
+    cursor: pointer;
+    border-right: 0.5px solid rgba(255, 255, 255, 0.3);
+} 
+
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cell:active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.cell3 {
+    border: none;
+}
+
+.player-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.player-card {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* backgroun-color: rgba(255, 255, 255, 0.3); */
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255,255,255,0) 100%);
+    border-radius: 50px;
+    box-shadow: 10px 8px 27px 2px rgba(0,0,0,0.37);
+}
+
+.pl-head {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #00bf72;
+}
+
+.pl-body {
+    height: 70px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #008793;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.pl-title {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
